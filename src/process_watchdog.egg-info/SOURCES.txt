@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+src/process_watchdog.egg-info/PKG-INFO
+src/process_watchdog.egg-info/SOURCES.txt
+src/process_watchdog.egg-info/dependency_links.txt
+src/process_watchdog.egg-info/top_level.txt
