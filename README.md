@@ -37,19 +37,29 @@ watchdog.start("fake@fakeemail.com")
 ```
 
 # Documentation
-```
-watchdog.start(email, universal_completion_notifier=False, universal_exception_notifier=False):
+
+```watchdog.start(email, universal_completion_notifier=False, universal_exception_notifier=False)```
 
 Inputs:
 - email - Where will the email send
-- universal_completion_notifier - if completion_handler should be placed automatically on all cells
-- universal_exception_notifier - if exception_handler should be placed automatically on all cells
-```
+- universal_completion_notifier - if %%completion_handler should be placed automatically on all cells
+- universal_exception_notifier - if %%exception_handler should be placed automatically on all cells
 
-```
-%%completion_handler
-```
 
+
+```%%exception_handler```
+
+A IPython magic command that fires an email if a cell has an exception. Must be placed at the top of every cell where you want this functionality.
+
+
+
+```%%completion_handler```
+
+A IPython magic command that fires an email if a cell completes. Must be placed at the top of every cell where you want this functionality.
+
+
+## Notes
+I've only tested this on an Ubuntu 20.04 machine running Python 3.9 and Jupyter-Lab 3.1.18.
 
 
 # Examples
